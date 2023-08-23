@@ -67,6 +67,7 @@ final class JokeTableView: UITableView, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
         cell.textLabel?.numberOfLines = 0
         cell.textLabel?.text = jokes[indexPath.row]
+        cell.selectionStyle = .none
         return cell
     }
 }
